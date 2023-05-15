@@ -22,5 +22,9 @@
   "bugs": {
     "url": "https://github.com/maryamhabibi2/reversi-maryam/issues"
   },
-  "homepage": "https://github.com/maryamhabibi2/reversi-maryam#readme"
+  "homepage": "https://github.com/maryamhabibi2/reversi-maryam#readme",
+  "dependencies": {
+    "node-static": "^0.7.11",
+    "socket.io": "^4.6.1"
+  }
 }
