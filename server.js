@@ -6,7 +6,7 @@ let static = require('node-static')
 let http = require('http');
 
 /* Assume that we are running on Heroku */
-let port = process.env.Port;
+let port = process.env.PORT;
 let directory = __dirname + '/public';
 
 /* If we aren't on Heroku, then we need to adjust our port and directory */
