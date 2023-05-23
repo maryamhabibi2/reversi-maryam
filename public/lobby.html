@@ -12,6 +12,15 @@
     .headerrow{
       background-color: darkseagreen;
     }
+    .join_room_response{
+      background-color: rgb(205, 205, 205);
+      margin: 1px 1px 1px 10px;
+    }
+    .chat_message {
+      font-size:125%;
+      margin: 1px 1px 1px 1px;
+      color:rgb(86, 13, 155)
+    }
   </style>
   <title>Reversi: Lobby</title>
 </head>
@@ -26,6 +35,14 @@
 
       <div class="row m-3">
         <div class="col">
+          <div class="row align-items-cneter justify-content-center m-3">
+            <div class="col-8">
+              <div class="input-group">
+                <input type="text" class="form-control text-nowrap" id="chatMessage" placeholder="Enter your message here" aria-label="Enter your message to send to chat room"/>
+                <button type="submit" class="btn btn-primary text-nowrap" id="chatButton" onclick="sendChatMessage()">Send</button>
+              </div>
+            </div>
+          </div>
           <h4>Messages</h4>
           <div id="messages">
           </div>
@@ -37,6 +54,7 @@
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha384-NXgwF8Kv9SSAr+jemKKcbvQsz+teULH/a5UNJvZc6kP47hZgl62M1vGnw6gHQhb1" crossorigin="anonymous"></script>
+  <script src="https://cdn.socket.io/4.6.1/socket.io.js" integrity="sha384-RWHdV2PIowc1CefCs6F8YeLtvicA0cfC+j+FDtzg2xDPLJXXDBxCvwS+lkzX2Xh/" crossorigin="anonymous"></script>
   <script src="assets/js/main.js"></script>
 </body>
 
