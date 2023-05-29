@@ -125,7 +125,6 @@ socket.on('player_disconnected',(payload) => {
     newNode.show("fade",500);
 })
 
-
 function sendChatMessage(){
     let request = {};
     request.room = chatRoom;
