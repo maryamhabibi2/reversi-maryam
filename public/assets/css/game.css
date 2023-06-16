@@ -1,9 +1,10 @@
 body {
-    background-color: rgb(171, 217, 171);
+    background-color: rgb(251, 248, 240);
+    font-family: 'Raleway', sans-serif;
 }
 
 .headerrow, #messagePane {
-    background-color: rgb(214, 243, 214);
+    background-color: rgb(237, 215, 245);
 }
 
 .join_room_response, .left_room_response {
@@ -23,7 +24,7 @@ table#game_board{
 }
 
 table#game_board td {
-    background-color: rgb(68, 144, 68);
+    background-color: rgb(255, 255, 255);
     border:1px solid black;
     margin:0px;
     padding:0px;

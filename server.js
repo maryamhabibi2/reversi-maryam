@@ -840,10 +840,10 @@ function send_game_update(socket,game_id, message) {
    if (legal_moves === 0) {
     let winner = "Tie Game";
     if(whitesum > blacksum){
-        winner = "white";
+        winner = "Hawk";
     }
     if(blacksum > whitesum){
-        winner = "black";
+        winner = "Lion";
     }
 
     let payload = {

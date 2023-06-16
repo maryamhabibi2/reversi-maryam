@@ -288,22 +288,22 @@ socket.on('game_update',(payload) =>{
     }
     
     if(my_color === 'white'){
-        $("#my_color").html('<h3 id="my_color">I am white</h3>');
+        $("#my_color").html('<h3 id="my_color">I am Lion</h3>');
 
     }
     else if( my_color === 'black'){
-        $("#my_color").html('<h3 id="my_color">I am black</h3>');
+        $("#my_color").html('<h3 id="my_color">I am Hawk</h3>');
     }
     else{
-        $("#my_color").html('<h3 id="my_color">Error: I don\'t know what color I am</h3>');    
+        $("#my_color").html('<h3 id="my_color">Error: I don\'t know what animal I am</h3>');    
     }
 
     if(payload.game.whose_turn === 'white'){
-        $("#my_color").append('<h4>It is white\'s turn</h4>');
+        $("#my_color").append('<h4>It is Lion\'s turn</h4>');
 
     }
     else if( payload.game.whose_turn === 'black'){
-        $("#my_color").append('<h4>It is black\'s turn</h4>');    
+        $("#my_color").append('<h4>It is Hawk\'s turn</h4>');    
     }
     else{
         $("#my_color").append('<h4>Error: Don\'t know whose turn it is</h4>');    
@@ -446,7 +446,7 @@ socket.on('game_over',(payload) =>{
     /* Announce with a button to the lobby */
     let nodeA = $("<div id='game_over'></div>");
     let nodeB = $("<h1>Game Over</h1>");
-    let nodeC = $("<h2>" + payload.who_won + "won!</h2>");
+    let nodeC = $("<h2>" + payload.who_won + " won!</h2>");
     let nodeD = $("<a href='lobby.html?username=" + username + "' class = 'btn btn-lg btn-success' role='button'>Return to lobby</a>");
     nodeA.append(nodeB);
     nodeA.append(nodeC);
